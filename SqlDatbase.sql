@@ -1,0 +1,2 @@
+create database Maquinarias
+Use database Maquinarias

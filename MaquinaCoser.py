@@ -1,3 +1,4 @@
+
 class MaquinaDeCoser:   
    
  def __init__(self,modelo, velocidad,tipo_puntada,tipo_tela, estado):
@@ -11,13 +12,12 @@ class MaquinaDeCoser:
  def _str_(self):
      return f"La Maquina de Coser Industrial es { self._modelo},{self._tipo_puntada},{self._tipo_tela}"   
 
+ 
  def encender_apagar(self,estado):
        if(self._estado== True):
-          self.velocidad_actual = self.velocidad_maxima // 2 # Velocidad inicial media
-          return f"La Maquina de coser esta encendida a una velocidad de {self.velocidad_actual}"
+            return f"La Maquina de coser esta encendida "
        else:
-        self.velocidad_actual =0
-        return f"La Maquina de coser esta apagado" 
+            return f"La Maquina de coser esta apagada" 
 
  def coser(self):
        if (self._estado==True and self._tipo_tela=="algodon"):
