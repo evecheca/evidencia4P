@@ -10,7 +10,16 @@ class MaquinaDeCoser:
      self._estado=estado
  
  def _str_(self):
-     return f"La Maquina de Coser Industrial es { self._modelo},{self._tipo_puntada},{self._tipo_tela}"   
+     return f"La Maquina de Coser Industrial es { self._modelo},{self._tipo_puntada},{self._tipo_tela}"  
+ 
+ def get_velocidad_maxima(self): 
+     return self._velocidad_maxima
+
+ def set_velocidad_actual(self,velocidad_actual):
+     self._velocidad_actual = velocidad_actual
+ 
+ def get_velocidad_actual(self):
+     return self._velocidad_actual    
 
  
  def encender(self,estado):
